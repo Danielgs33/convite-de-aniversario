@@ -255,5 +255,8 @@ body {
 }
 
 #aud {
+    display: flex;
     align-items:self-end
+    
+
 }

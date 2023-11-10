@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
         // Exibe o contador no elemento com o id "contador"
-        document.getElementById('contador').innerHTML = `${dias} dias - ${horas}h:${minutos}m ${segundos}s`;
+        document.getElementById('contador').innerHTML = `${dias} Dias - ${horas}h:${minutos}m ${segundos}s`;
 
         // Se a contagem regressiva atingir zero, exibe uma mensagem e para o intervalo
         if (diferenca <= 0) {
             clearInterval(intervalo);
-            document.getElementById('contador').innerHTML = 'Contagem regressiva encerrada!';
+            document.getElementById('contador').innerHTML = 'Contagem regressiva encerrada! Hora de ir a festa!';
         }
     }, 1000);
 });
